@@ -13,7 +13,7 @@ a {
     text-decoration: none;
 }
 
-ul {
+li {
     list-style: none;
     padding-left: 0;
 }
@@ -22,6 +22,10 @@ h2 {
     font-size: 4rem;
     color: #FFFFFF;
     text-align: center;
+}
+
+p {
+    overflow-wrap: normal;
 }
 
 .center {
@@ -79,16 +83,30 @@ div.top nav ul li a {
     color: #55C6FF;
 }
 
+
+
+/* domain */
+#domain {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 10px;
+    margin-bottom: 10rem;
+}
+
+.domain-item {
+    width: 20rem;
+    height: 310px;
+}
+
 .under-line {
-    line-height: 0;
-    border-bottom: solid #FFFFFF 10 px ;
-    text-decoration: none;
+    line-height: 30px;
+    border-bottom: solid #FFFFFF 1px ;
 }
 
 /* product */
 #product {
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: minmax(1rem, 3rem);
+    margin-bottom: 10rem;
 }
 
 .product-item {
@@ -104,16 +122,27 @@ div#product div.product-item img {
     padding-bottom: 0px;
 }
 
-div#product.product.gird.wrapper div.product-item p {
-    margin-top: 5px;
-    border: #001AFF;
-    color: #FFFFFF;
-    overflow-wrap: break-word;
-}
-
 .explanaiton-item {
     width: 30rem;
     height: 310px;
     margin-left: 1px;
 }
 
+div#product.product.gird.wrapper div.explanaiton-item p {
+    margin-top: 5px;
+    color: #FFFFFF;
+    overflow-wrap: break-word;
+}
+
+/* footer */
+#footer {
+    text-align: center;
+    padding-bottom: 3px;
+    background-color: #080607;
+}
+
+.footer-line {
+    width: 80%;
+    align-items: center;
+    border: #001AFF 3px solid;
+}
