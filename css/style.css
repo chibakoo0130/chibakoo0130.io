@@ -24,6 +24,13 @@ h2 {
     text-align: center;
 }
 
+/* モバイル版 */
+@media (max-width: 600px) {
+    div.top h1 {
+        font-size: 3rem;
+    }
+}
+
 p {
     overflow-wrap: normal;
 }
@@ -56,9 +63,8 @@ p {
 .top {
     background-image: url(../images/top.jpg);
     background-position: right;
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
-    min-height: 100vh;
 }
 
 div.top h1 {
