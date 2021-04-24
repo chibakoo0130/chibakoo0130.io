@@ -10,6 +10,7 @@ img {
 }
 
 a {
+    color: #FFFFFF;
     text-decoration: none;
 }
 
@@ -54,7 +55,8 @@ p {
 
 /* top */
 .top {
-    background-image: url(../images/top.jpg);
+    background-image: url(../images/top.jpg), linear-gradient(#FFFFFF, #080607);
+    background-blend-mode: overlay;
     background-position: right;
     background-size: cover;
     background-repeat: no-repeat;
@@ -146,6 +148,9 @@ div#product.product.gird.wrapper div.explanaiton-item p {
 
 /* モバイル版 */
 @media (max-width: 800px) {
+    h2 {
+        font-size: 1.5rem;
+    }
     .wrapper {
         margin-left: 10px;
         margin-right: 5px;
