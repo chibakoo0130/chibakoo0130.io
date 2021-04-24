@@ -24,13 +24,6 @@ h2 {
     text-align: center;
 }
 
-/* モバイル版 */
-@media (max-width: 600px) {
-    div.top h1 {
-        font-size: 3rem;
-    }
-}
-
 p {
     overflow-wrap: normal;
 }
@@ -70,7 +63,7 @@ p {
 div.top h1 {
     font-size: 7.5rem;
     color: #FFFFFF;
-    margin-top: 15rem;
+    margin-top: 5rem;
     margin-left: 11%;
     text-shadow: 1px 1px 3px #FFFFFF;
 }
@@ -111,7 +104,7 @@ div.top nav ul li a {
 /* product */
 #product {
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: minmax(1rem, 3rem);
+    gap: 10px;
     margin-bottom: 10rem;
 }
 
@@ -122,10 +115,8 @@ div.top nav ul li a {
 }
 
 div#product div.product-item img {
-    text-align: center;
-    width: 500px;
-    height: 310px;
-    padding-bottom: 0px;
+    width: 30rem;
+    height: 20rem;
 }
 
 .explanaiton-item {
@@ -151,4 +142,43 @@ div#product.product.gird.wrapper div.explanaiton-item p {
     width: 80%;
     align-items: center;
     border: #001AFF 3px solid;
+}
+
+/* モバイル版 */
+@media (max-width: 800px) {
+    .wrapper {
+        margin-left: 10px;
+        margin-right: 5px;
+    }
+    .top {
+        width: 100%;
+    }
+
+    div.top h1 {
+        font-size: 3rem;
+        margin-top: 5rem;
+    }
+
+    #product {
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        margin-bottom: 10rem;
+    }
+
+    div#product div.product-item img {
+        text-align: center;
+        width: 15rem;
+        height: 12rem;
+    }
+
+    .product-item {
+        width: 15rem;
+        height: 12rem;
+        margin-right: 1px;
+    }
+
+    .explanaiton-item {
+        width: 15rem;
+        height: 12rem;
+        margin-left: 1px;
+    }
 }
